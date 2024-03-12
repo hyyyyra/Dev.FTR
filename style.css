@@ -58,11 +58,11 @@ body {
 }
 
 .menu-1{
-    margin-right: 180px;
+    margin-right: 600px;
 }
 
 .menu-2{
-    margin-left: 180px;
+    margin-left: 150px;
     display: flex;
     align-items: center;
 }

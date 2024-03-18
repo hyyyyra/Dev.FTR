@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Programador Fabián Trapp</title>
 </head>
@@ -19,12 +17,12 @@
             <label for="menu">
                 <img src="images/menu.png" class="menu-icono" alt="">
             </label>
-            <nav class="navbar">                           
+            <nav class="navbar">               
                 <div class="menu-1">
                     <ul>
                         <li><a href="#">Inicio</a></li>
                         <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Contacto</a></li>
                     </ul>
                 </div>
                 <img class="logo-2" src="images/logo.svg" alt="">
@@ -66,57 +64,69 @@
         </div>
     </header>
 
-    <main class="horario">
-        <div class="horario-info container">
+    <main class="products">
+        <div class="tabs container">
 
-            <h2>Horario</h2>
-            <div class="horario-txt">
-                <div class="txt">
-                    <h4>Direccion</h4>
-                    <p>
-                        LloLleo
-                    </p>
-                    <p>
-                        San Antonio
-                    </p>
-                </div>
-                <div class="txt">
-                    <h4>Horario</h4>
-                    <p>
-                        Lunes a Viernes : 9am - 8pm
-                    </p>
-                    <p>
-                        Sabado y Domingo : 11am - 7pm
-                    </p>
-                </div>
-                <div class="txt">
-                    <h4>Telefono</h4>
-                    <p>
-                        +56961088904
-                    </p>
-                    <p>
-                        +56961088904
-                    </p>
-                </div>
-                <div class="txt">
-                    <h4>Redes Sociales</h4>
-                    <div class="socials">
-                        <a href="#">
-                            <div class="social">
-                                <img src="images/s1.svg" alt="">
+            <input type="radio" name="tabs" id="tab2" checked="checked" class="tabInput" value="2">
+            <label for="tab2">Skills</label>
+
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper2">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="img/html-icon.svg" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Producto</h4>
+                                    <p>Calidad premium</p>
+                                    <span class="price">$80.00</span>
+                                </div>
                             </div>
-                        </a>
-                        <a href="#">
-                            <div class="social">
-                                <img src="images/s2.svg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="img/css-icon.svg" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Producto</h4>
+                                    <p>Calidad premium</p>
+                                    <span class="price">$80.00</span>
+                                </div>
                             </div>
-                        </a>
-                        <a href="#">
-                            <div class="social">
-                                <img src="images/s3.svg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="img/js-icon.svg" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Producto</h4>
+                                    <p>Calidad premium</p>
+                                    <span class="price">$80.00</span>
+                                </div>
                             </div>
-                        </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="images/food7.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Producto</h4>
+                                    <p>Calidad premium</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </div>
@@ -133,32 +143,16 @@
             </p>
             <a href="#" class="btn-2">Más información</a>
         </div>
+        
     </section>
 
     <section>
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53175.487636431004!2d-71.65250514598348!3d-33.59316022505625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966238514576f2af%3A0x153105bba7242aa2!2sSan%20Antonio%2C%20Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1709666203920!5m2!1ses-419!2scl" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
-    <footer id="contacto">
-        <div class="contenedor footer-content">
-            <div class="contact-us">
-                <h2 class="brand">LGM Desing</h2>
-                <p>Somos expertos en la creación de tus sueños</p>
-            </div>
-            <div class="social-media">
-                <a href="./" class="social-media-icon">
-                    <i class='bx bxl-facebook'></i> 
-                </a>
-                <a href="./" class="social-media-icon">
-                    <i class='bx bxl-twitter' ></i> 
-                </a>
-                <a href="./" class="social-media-icon">
-                    <i class='bx bxl-instagram' ></i> 
-                </a>
-            </div>
-        </div>
-        <div class="line"></div>
-    </footer>
+    <footer>
+        <p>Diseñado por Fabián Trapp.</p>
+    </footer>      
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>

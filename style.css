@@ -11,6 +11,7 @@
 body {
   background-color: #080202;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .container{
@@ -341,22 +342,9 @@ body {
     background-color: #DB241B;
 }
 
-.horario {
+.carousel {
     padding: 100px 0px;
     background-color: #0d0d0d;
-}
-
-.horario-info h2 {
-    font-size: 75px;
-    color: #FFFFFF;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-}
-
-.horario-txt {
-    display: flex;
-    justify-content: space-between;
 }
 
 .txt {
@@ -376,72 +364,17 @@ body {
     margin-bottom: 15px;
 }
 
-/*Footer*/
-
-footer{
-    background: #080202;
-    padding-bottom: 0.1px;
-}
-
-.footer-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 60px;
-    padding-bottom: 40px;
-}
-
-.contact-us{
-    width: 40%;
-    color: #fff;
-}
-
-.brand{
-    font-weight: 500;
-    font-size: 40px;
-}
-
-.brand+p{
-    font-weight: 500;
-}
-
-.social-media{
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.social-media-icon{
-    display: inline-block;
-    margin-left: 20px;
-    width: 60px;
-    height: 60px;
-    border: 1px solid #DB241B;
-    border-radius: 50%;
+footer {
     text-align: center;
-    color: white;
+    background-color: #080202; /* Cambia el color de fondo según tu preferencia */
+    color: white; /* Cambia el color del texto según tu preferencia */
+    padding: 20px 0; /* Ajusta el espacio interno según sea necesario */
 }
-
-.social-media-icon:hover{
-    background: #DB241B;
-    color: #FFFFFF;
+  
+footer p {
+    margin: 0; /* Elimina el margen predeterminado */
 }
-
-.social-media-icon i{
-    font-size: 30px;
-    line-height: 60px;
-}
-
-.line{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 2px;
-    background: white;
-    margin-bottom: 60px;
-}
-
+  
 .links h4 {
     color: #FFFFFF;
     text-transform: uppercase;
@@ -454,6 +387,44 @@ footer{
     margin-bottom: 5px;
     display: inline-block;
 }
+
+.slider-carousel{
+    position: relative;
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+}
+
+.item{
+    position: absolute;
+    width: 200px;
+    height: 320px;
+    text-align: justify;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    left: calc(50% - 110px);
+    top: 0;
+}
+
+#next, #prev{
+    position: absolute;
+    top: 40%;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    font-size: xx-large;
+    font-weight: bold;
+    left: 50px;
+}
+
+#next{
+    left: unset;
+    right: 50px;
+}
+
+/**MEDIA QUERY**/
 
 @media(max-width: 991px){
     .menu {

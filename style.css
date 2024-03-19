@@ -424,6 +424,52 @@ footer p {
     right: 50px;
 }
 
+.contactodev {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactodev form input[type="text"],
+.contactodev form input[type="email"],
+.contactodev form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #A7A7A7;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.contactodev form input[type="text"]:focus,
+.contactodev form input[type="email"]:focus,
+.contactodev form textarea:focus {
+    outline: none;
+    border-color: #DB241B;
+}
+
+.contactodev form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contactodev form input[type="submit"] {
+    background-color: #DB241B;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contactodev form input[type="submit"]:hover {
+    background-color: #31b0d5;
+}
+
 /**MEDIA QUERY**/
 
 @media(max-width: 991px){
